@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валентин Багадин](https://up.htmlacademy.ru/adaptive/10/user/291585).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Собакарь](https://up.htmlacademy.ru/adaptive/10/user/128451).
 
 ---
 
