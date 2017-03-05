@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        </a>
+      </div>
+
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a>Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <section class="shop-descr  shop-descr--grey">
+      <div class="shop-descr__wrapper">
+        <h1 class="shop-descr__title  shop-descr__title--catalog">Каталог товаров</h1>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+
+          <ul class="social-links">
+            <li class="social-link  social-link--in">
+              <a href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li class="social-link  social-link--fb">
+              <a href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li class="social-link  social-link--tw">
+              <a href="https://twitter.com/">Twitter</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="page-footer__copyright">
+          Разработано
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="to-cart">
+      <div class="to-cart__wrapper">
+        <h2 class="to-cart__title">Добавить в корзину</h2>
+
+        <form class="to-cart__size-form" action="https://echo.htmlacademy.ru/">
+
+          <fieldset>
+            <legend>Выберите размер:</legend>
+            <input type="radio" name="size" id="s" checked>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="m">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="l">
+            <label for="l">L</label>
+          </fieldset>
+
+          <input class="to-cart__submit  btn  btn--add" type="submit" name="submit" value="Добавить">
+
+        </form>
+
+      </div>
+    </div>
+
+  </body>
+</html>
