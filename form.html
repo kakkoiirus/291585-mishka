@@ -8,7 +8,9 @@
     <header class="page-header">
 
       <div class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        <a href="index.html">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        </a>
       </div>
 
       <nav class="main-nav main-nav--closed">
@@ -17,7 +19,7 @@
 
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a>Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
           </ul>
@@ -25,6 +27,77 @@
         </div>
       </nav>
     </header>
+
+    <section class="shop-descr  shop-descr--grey">
+      <div class="shop-descr__wrapper">
+        <h1 class="shop-descr__title  shop-descr__title--form">Вязание на заказ</h1>
+      </div>
+    </section>
+
+    <div class="custom-form">
+      <div class="custom-form__wrapper">
+        <p class="custom-form__text">
+          Мы будем рады воплотить в жизнь ваши пожелания!
+          Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+
+        <form class="custom-form__form" action="https://echo.htmlacademy.ru/">
+          <fieldset>
+            <legend>Тип</legend>
+            <input type="radio" name="type" id="interior" checked>
+            <label for="interior">Аксессуар для интерьера</label>
+            <input type="radio" name="type" id="toy">
+            <label for="toy">Детская игрушка</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" id="white" name="white" checked>
+            <label for="white">Белый</label>
+            <input type="checkbox" id="grey" name="grey" checked>
+            <label for="grey">Серый</label>
+            <input type="checkbox" id="tiffany" name="tiffany">
+            <label for="tiffany">«Тиффани»</label>
+            <input type="checkbox" id="black" name="black">
+            <label for="black">Черный</label>
+            <input type="checkbox" id="pink" name="pink">
+            <label for="pink">Розовый</label>
+            <input type="checkbox" id="orange" name="orange">
+            <label for="orange">Оранжевый</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>ФИО</legend>
+            <label for="firstname">Имя</label>
+            <input type="text" name="firstname" placeholder="Введите ваше имя*" required>
+            <label for="lastname">Фамилия</label>
+            <input type="text" name="lastname" placeholder="Укажите фамилию*" required>
+            <label for="secondname">Отчество</label>
+            <input type="text" name="secondname" placeholder="Отчество, если желаете">
+          </fieldset>
+
+          <fieldset>
+            <legend>Тел</legend>
+            <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>E-Mail</legend>
+            <input type="email" name="email" placeholder="Ваш Email*" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Доп</legend>
+            <textarea name="extra" id="extra" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+
+          <p>*Поля обязательны для заполнения</p>
+
+          <input class="custom-form__send  btn  btn--send" type="submit" name="submit" value="Отправить заказ">
+
+        </form>
+      </div>
+    </div>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
