@@ -42,53 +42,53 @@
         </p>
 
         <form class="custom-form__form" action="https://echo.htmlacademy.ru/">
-          <fieldset>
-            <legend>Тип</legend>
-            <input type="radio" name="type" id="interior" checked>
-            <label for="interior">Аксессуар для интерьера</label>
-            <input type="radio" name="type" id="toy">
-            <label for="toy">Детская игрушка</label>
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">Тип</legend>
+            <input class="custom-form__radio" type="radio" name="type" id="interior" checked>
+            <label class="custom-form__type-label" for="interior">Аксессуар для интерьера</label>
+            <input class="custom-form__radio" type="radio" name="type" id="toy">
+            <label class="custom-form__type-label" for="toy">Детская игрушка</label>
           </fieldset>
 
-          <fieldset>
-            <legend>Цвет</legend>
-            <input type="checkbox" id="white" name="white" checked>
-            <label for="white">Белый</label>
-            <input type="checkbox" id="grey" name="grey" checked>
-            <label for="grey">Серый</label>
-            <input type="checkbox" id="tiffany" name="tiffany">
-            <label for="tiffany">«Тиффани»</label>
-            <input type="checkbox" id="black" name="black">
-            <label for="black">Черный</label>
-            <input type="checkbox" id="pink" name="pink">
-            <label for="pink">Розовый</label>
-            <input type="checkbox" id="orange" name="orange">
-            <label for="orange">Оранжевый</label>
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">Цвет</legend>
+            <input class="custom-form__checkbox" type="checkbox" id="white" name="white" checked>
+            <label class="custom-form__color-label" for="white">Белый</label>
+            <input class="custom-form__checkbox" type="checkbox" id="grey" name="grey" checked>
+            <label class="custom-form__color-label" for="grey">Серый</label>
+            <input class="custom-form__checkbox" type="checkbox" id="tiffany" name="tiffany">
+            <label class="custom-form__color-label" for="tiffany">«Тиффани»</label>
+            <input class="custom-form__checkbox" type="checkbox" id="black" name="black">
+            <label class="custom-form__color-label" for="black">Черный</label>
+            <input class="custom-form__checkbox" type="checkbox" id="pink" name="pink">
+            <label class="custom-form__color-label" for="pink">Розовый</label>
+            <input class="custom-form__checkbox" type="checkbox" id="orange" name="orange">
+            <label class="custom-form__color-label" for="orange">Оранжевый</label>
           </fieldset>
 
-          <fieldset>
-            <legend>ФИО</legend>
-            <label for="firstname">Имя</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*" required>
-            <label for="lastname">Фамилия</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
-            <label for="secondname">Отчество</label>
-            <input type="text" name="secondname" id="secondname" placeholder="Отчество, если желаете">
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">ФИО</legend>
+            <label class="custom-form__name-label" for="firstname">Имя</label>
+            <input class="custom-form__text-input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*" required>
+            <label class="custom-form__name-label" for="lastname">Фамилия</label>
+            <input class="custom-form__text-input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
+            <label class="custom-form__name-label" for="secondname">Отчество</label>
+            <input class="custom-form__text-input" type="text" name="secondname" id="secondname" placeholder="Отчество, если желаете">
           </fieldset>
 
-          <fieldset>
-            <legend>Тел</legend>
-            <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">Тел</legend>
+            <input class="custom-form__tel-input" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
           </fieldset>
 
-          <fieldset>
-            <legend>E-Mail</legend>
-            <input type="email" name="email" placeholder="Ваш Email*" required>
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">E-Mail</legend>
+            <input class="custom-form__email-input" type="email" name="email" placeholder="Ваш Email*" required>
           </fieldset>
 
-          <fieldset>
-            <legend>Доп</legend>
-            <textarea name="extra" id="extra" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="custom-form__group">
+            <legend class="custom-form__group-name">Доп</legend>
+            <textarea class="custom-form__extra-input" name="extra" id="extra" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
 
           <p class="custom-form__note">*Поля обязательны для заполнения</p>
