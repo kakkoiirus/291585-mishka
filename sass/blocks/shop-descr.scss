@@ -1,0 +1,16 @@
+.shop-descr {
+  background-color: #fcfcfc;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &--grey {
+    background-color: #f1f1f1;
+    background-image: none;
+    background-repeat: none;
+  }
+}
+
+.shop-descr__title {
+  @include font-bold(27px, 30px);
+  color: #010000;
+}

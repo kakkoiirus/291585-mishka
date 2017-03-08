@@ -1,0 +1,13 @@
+.shop-section {
+  @include font-bold(19px, 24px);
+  color: #ffffff;
+  text-decoration: none;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}

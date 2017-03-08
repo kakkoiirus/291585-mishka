@@ -1,0 +1,12 @@
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  @include font-normal(15px, 30px);
+  color: #444444;
+  background-color: #ffffff;
+}
+
+a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+  text-decoration: none;
+}

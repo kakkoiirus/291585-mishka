@@ -1,0 +1,22 @@
+.promo__title {
+  @include font-bold(25px, 30px);
+  color: #000000;
+}
+
+.promo__week {
+  @include font-bold(17px, 20px);
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.promo__descr {
+  @include font-normal(15px, 24px);
+}
+
+.promo__item-descr {
+  @include font-normal(15px, 20px);
+}
+
+.promo__price {
+  @include font-bold(17px, 24px);
+}
