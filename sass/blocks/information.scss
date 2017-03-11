@@ -1,0 +1,9 @@
+.information__title {
+  @include font-bold(17px, 24px);
+  color: #000000;
+}
+
+.information__text {
+  @include font-normal(13px, 24px);
+  color: #444444;
+}

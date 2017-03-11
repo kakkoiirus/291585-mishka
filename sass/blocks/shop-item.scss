@@ -1,0 +1,14 @@
+.shop-item__title {
+  @include font-bold(17px, 24px);
+  color: #000000;
+}
+
+.shop-item__descr {
+  @include font-normal(13px, 30px);
+  color: #444444;
+}
+
+.shop-item__price-value {
+  @include font-bold(15px, 24px);
+  color: #000000;
+}
