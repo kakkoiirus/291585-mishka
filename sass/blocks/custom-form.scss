@@ -1,3 +1,8 @@
+.custom-form {
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
 .custom-form__text {
   @include font-normal(13px, 24px);
   color: #444444;

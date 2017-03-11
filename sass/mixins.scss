@@ -9,3 +9,9 @@
   line-height: $line-height;
   font-weight: 700;
 }
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

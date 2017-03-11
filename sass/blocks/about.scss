@@ -1,3 +1,8 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+
 .about__title {
   @include font-bold(25px, 30px);
   color: #000000;

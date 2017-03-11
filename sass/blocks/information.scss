@@ -1,3 +1,10 @@
+.information {
+  margin-top: 30px;
+  margin-bottom: 59px;
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
 .information__title {
   @include font-bold(17px, 24px);
   color: #000000;
