@@ -9,3 +9,18 @@ a {
   color: #444444;
   text-decoration: none;
 }
+
+body > * {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+body > * > * {
+  outline: 2px solid green;
+  outline-offset: -2px;
+}
+
+body > * > * > * {
+  outline: 2px solid yellow;
+  outline-offset: -2px;
+}
