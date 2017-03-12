@@ -1,8 +1,19 @@
 .page-header {
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .page-header__logo {
-  margin-left: 85px;
+  margin: 0 auto;
   width: 86px;
+}
+
+@media #{$tablet-widths} {
+
+  .page-header {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+
 }
