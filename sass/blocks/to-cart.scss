@@ -1,0 +1,19 @@
+.to-cart {
+  padding-top: 35px;
+  padding-bottom: 47px;
+}
+
+.to-cart__title {
+  @include font-bold(25px, 30px);
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.to-cart__legend {
+  @include font-normal(15px, 30px);
+}
+
+.to-cart__size {
+  @include font-bold(17px, 16px);
+  color: #444444;
+}

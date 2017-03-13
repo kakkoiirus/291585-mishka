@@ -1,0 +1,45 @@
+.custom-form {
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
+.custom-form__text {
+  @include font-normal(13px, 24px);
+  color: #444444;
+}
+
+.custom-form__form {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+}
+
+.custom-form__group {
+  border: none;
+}
+
+.custom-form__group-name {
+  @include font-bold(17px, 16px);
+  color: #63d1bb;
+}
+
+.custom-form__type-label,
+.custom-form__color-label,
+.custom-form__name-label {
+  @include font-bold(17px, 18px);
+  color: #000000;
+}
+
+.custom-form__text-input,
+.custom-form__tel-input,
+.custom-form__email-input,
+.custom-form__extra-input {
+  font: inherit;
+  @include font-normal(17px, 18px);
+  color: #444444;
+  opacity: 0.3;
+}
+
+.custom-form__note {
+  @include font-normal(14px, 16px);
+  color: #444444;
+}

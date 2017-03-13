@@ -1,0 +1,14 @@
+.contact {
+  padding-top: 37px;
+  padding-bottom: 38px;
+}
+
+.contact__title {
+  @include font-bold(18px, 30px);
+  color: #000000;
+}
+
+.contact__item,
+.contact__email-link {
+  @include font-normal(15px, 30px);
+}

@@ -1,0 +1,44 @@
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-normal($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+}
+
+@mixin font-bold($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 700;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container() {
+  width: 260px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,23 @@
+.reviews {
+  margin-top: 55px;
+}
+
+.reviews__title {
+  @include font-bold(25px, 30px);
+  color: #000000;
+}
+
+.reviews__item {
+  @include font-normal(15px, 30px);
+}
+
+.reviews__author-name {
+  @include font-bold(18px, 24px);
+  color: #000000;
+  font-style: normal;
+}
+
+.reviews__author-nick {
+  @include font-normal(17px, 30px);
+  font-style: normal;
+}

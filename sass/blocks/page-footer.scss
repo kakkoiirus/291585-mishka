@@ -1,0 +1,14 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 23px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__copyright {
+  @include font-bold(19px, 18px);
+  color: #000000;
+}
+
+.page-footer__copyright-link {
+  font-size: 0;
+}

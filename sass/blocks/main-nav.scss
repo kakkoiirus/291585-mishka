@@ -1,0 +1,8 @@
+.main-nav {
+  @include font-bold(17px, 24px);
+  color: #000000;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
