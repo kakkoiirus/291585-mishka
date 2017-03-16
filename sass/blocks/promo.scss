@@ -3,25 +3,160 @@
   padding-bottom: 35px;
 }
 
+.promo__wrapper {
+  @include container;
+}
+
 .promo__title {
   @include font-bold(25px, 30px);
+  margin-top: 0;
+  margin-bottom: 8px;
   color: #000000;
 }
 
 .promo__week {
   @include font-bold(17px, 20px);
+  display: block;
+  margin-top: 0;
+  margin-bottom: 26px;
   color: #63d1bb;
   text-transform: uppercase;
 }
 
 .promo__descr {
   @include font-normal(15px, 24px);
+  margin-top: 0;
+  margin-bottom: 27px;
 }
 
 .promo__item-descr {
   @include font-normal(15px, 20px);
+  margin-bottom: 28px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.promo__item-descr tr {
+  border-bottom: 1px solid #ececec;
+}
+
+.promo__option {
+  width: 98px;
+}
+
+.promo__option,
+.promo__value {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.promo__image {
+  margin-bottom: 26px;
 }
 
 .promo__price {
   @include font-bold(17px, 24px);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media #{$tablet-widths} {
+
+  .promo {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  .promo__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .promo__title {
+    @include font(43px, 50px);
+    margin: 0;
+  }
+
+  .promo__week {
+    @include font(17px, 17px);
+    margin: 10px 0 0 0;
+    width: 100px;
+  }
+
+  .promo__body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 379px;
+    min-height: 404px;
+  }
+
+  .promo__descr {
+    @include font(17px, 30px);
+    margin-bottom: 45px;
+  }
+
+  .promo__item-descr {
+    margin-bottom: 35px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .promo__price {
+    @include font(20px, 24px);
+    margin-top: auto;
+    margin-bottom: 35px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .promo {
+    padding-top: 70px;
+  }
+
+  .promo__wrapper {
+    position: relative;
+  }
+
+  .promo__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .promo__title {
+    @include font(53px, 57px);
+  }
+
+  .promo__week {
+    box-sizing: border-box;
+    width: 175px;
+    padding-left: 47px;
+    padding-right: 57px;
+    margin: 15px 0 0 0;
+  }
+
+  .promo__body {
+    position: static;
+    padding-left: 175px;
+    width: 292px;
+    min-height: 520px;
+  }
+
+  .promo__descr {
+    margin-bottom: 55px;
+  }
+
+  .promo__image {
+    z-index: -10;
+    width: 525px;
+    height: 636px;
+  }
+
 }

@@ -33,12 +33,3 @@
     width: 1050px;
   }
 }
-
-@mixin clearfix() {
-  &::after {
-    content: "";
-
-    display: table;
-    clear: both;
-  }
-}
