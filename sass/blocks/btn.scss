@@ -9,6 +9,29 @@
   text-align: center;
   border: 2px solid #444444;
 
+  &--prev,
+  &--next {
+    width: 50%;
+    height: 51px;
+    font-size: 0;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    cursor: pointer;
+  }
+
+  &--prev {
+    background-image: url("../../img/icon-left-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--next {
+    border-left: none;
+    background-image: url("../../img/icon-right-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   &--write {
     font-size: 18px;
   }
@@ -32,5 +55,21 @@
   &--make-order {
     font-size: 17px;
     line-height: 16px;
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .btn {
+
+    &--prev,
+    &--next {
+    border: none;
+    }
+
+    &--write {
+      width: 175px;
+      font-size: 17px;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .about {
-  padding-top: 30px;
-  padding-bottom: 34px;
+  padding-top: 31px;
+  margin-bottom: 60px;
+}
+
+.about__wrapper {
+  @include container;
 }
 
 .about__title {
@@ -10,6 +14,71 @@
 
 .about__list {
   @include font-bold(17px, 20px);
+  margin: 0;
+  padding: 0;
   color: #000000;
   list-style: none;
+}
+
+.about__item {
+  padding-top: 90px;
+}
+
+@media #{$tablet-widths} {
+
+  .about__title {
+    @include font(43px, 50px);
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+    @include font(20px, 22px);
+  }
+
+  .about__item {
+    box-sizing: border-box;
+    width: 50%;
+    padding-top: 106px;
+    padding-right: 35px;
+
+    &--one {
+      order: 1;
+    }
+
+    &--two {
+      order: 3;
+    }
+
+    &--three {
+      order: 5;
+    }
+
+    &--four {
+      order: 2;
+    }
+
+    &--five {
+      order: 4;
+    }
+
+    &--six {
+      order: 6;
+    }
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .about__wrapper {
+    width: 700px;
+  }
+
+  .about__title {
+    @include font(53px, 57px);
+    padding-top: 110px;
+  }
 }
