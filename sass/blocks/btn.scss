@@ -8,6 +8,7 @@
   text-decoration: none;
   text-align: center;
   border: 2px solid #444444;
+  cursor: pointer;
 
   &--prev,
   &--next {
@@ -45,6 +46,7 @@
     line-height: 16px;
     color: #ffffff;
     background-color: #63d1bb;
+    border: none;
   }
 
   &--send {
@@ -55,6 +57,13 @@
   &--make-order {
     font-size: 17px;
     line-height: 16px;
+  }
+
+  &--size {
+    @include font-bold(17px, 16px);
+    width: 82px;
+    color: #444444;
+    border-color: #ececec;
   }
 }
 
@@ -75,6 +84,10 @@
     &--write-us {
       width: 229px;
       font-size: 17px;
+    }
+
+    &--size {
+      width: 112px;
     }
   }
 }
