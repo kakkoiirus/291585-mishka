@@ -41,63 +41,84 @@
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
+      </div>
 
-        <form class="custom-form__form" action="https://echo.htmlacademy.ru/">
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">Тип</legend>
-            <input class="custom-form__radio" type="radio" name="type" id="interior" checked>
-            <label class="custom-form__type-label" for="interior">Аксессуар для интерьера</label>
-            <input class="custom-form__radio" type="radio" name="type" id="toy">
-            <label class="custom-form__type-label" for="toy">Детская игрушка</label>
-          </fieldset>
+      <form class="custom-form__form" action="https://echo.htmlacademy.ru/">
 
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">Цвет</legend>
-            <input class="custom-form__checkbox" type="checkbox" id="white" name="white" checked>
-            <label class="custom-form__color-label" for="white">Белый</label>
-            <input class="custom-form__checkbox" type="checkbox" id="grey" name="grey" checked>
-            <label class="custom-form__color-label" for="grey">Серый</label>
-            <input class="custom-form__checkbox" type="checkbox" id="tiffany" name="tiffany">
-            <label class="custom-form__color-label" for="tiffany">«Тиффани»</label>
-            <input class="custom-form__checkbox" type="checkbox" id="black" name="black">
-            <label class="custom-form__color-label" for="black">Черный</label>
-            <input class="custom-form__checkbox" type="checkbox" id="pink" name="pink">
-            <label class="custom-form__color-label" for="pink">Розовый</label>
-            <input class="custom-form__checkbox" type="checkbox" id="orange" name="orange">
-            <label class="custom-form__color-label" for="orange">Оранжевый</label>
-          </fieldset>
+        <div class="custom-form__group">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--type">Тип</legend>
+            <div class="custom-form__values">
+              <input class="custom-form__radio" type="radio" name="type" id="interior" checked>
+              <label class="custom-form__type-label" for="interior">Аксессуар для интерьера</label>
+              <input class="custom-form__radio" type="radio" name="type" id="toy">
+              <label class="custom-form__type-label" for="toy">Детская игрушка</label>
+            </div>
+          </div>
+        </div>
 
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">ФИО</legend>
-            <label class="custom-form__name-label" for="firstname">Имя:</label>
-            <input class="custom-form__text-input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*" required>
-            <label class="custom-form__name-label" for="lastname">Фамилия:</label>
-            <input class="custom-form__text-input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
-            <label class="custom-form__name-label" for="secondname">Отчество:</label>
-            <input class="custom-form__text-input" type="text" name="secondname" id="secondname" placeholder="Отчество, если желаете">
-          </fieldset>
+        <div class="custom-form__group  custom-form__group--grey">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--color">Цвет</legend>
+            <div class="custom-form__values  custom-form__values--color">
+              <input class="custom-form__checkbox" type="checkbox" id="white" name="white" checked>
+              <label class="custom-form__color-label" for="white">Белый</label>
+              <input class="custom-form__checkbox" type="checkbox" id="grey" name="grey" checked>
+              <label class="custom-form__color-label" for="grey">Серый</label>
+              <input class="custom-form__checkbox" type="checkbox" id="tiffany" name="tiffany">
+              <label class="custom-form__color-label" for="tiffany">«Тиффани»</label>
+              <input class="custom-form__checkbox" type="checkbox" id="black" name="black">
+              <label class="custom-form__color-label" for="black">Черный</label>
+              <input class="custom-form__checkbox" type="checkbox" id="pink" name="pink">
+              <label class="custom-form__color-label" for="pink">Розовый</label>
+              <input class="custom-form__checkbox" type="checkbox" id="orange" name="orange">
+              <label class="custom-form__color-label" for="orange">Оранжевый</label>
+            </div>
+          </div>
+        </div>
 
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">Тел</legend>
+        <div class="custom-form__group">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--fullname">ФИО</legend>
+            <div class="custom-form__values  custom-form__values--fullname">
+              <label class="custom-form__name-label" for="firstname">Имя:</label>
+              <input class="custom-form__text-input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*" required>
+              <label class="custom-form__name-label" for="lastname">Фамилия:</label>
+              <input class="custom-form__text-input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
+              <label class="custom-form__name-label" for="secondname">Отчество:</label>
+              <input class="custom-form__text-input" type="text" name="secondname" id="secondname" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-form__group  custom-form__group--tel  custom-form__group--grey">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--tel">Тел</legend>
             <input class="custom-form__tel-input" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-          </fieldset>
+          </div>
+        </div>
 
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">E-Mail</legend>
+        <div class="custom-form__group  custom-form__group--email  custom-form__group--grey">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--email">E-Mail</legend>
             <input class="custom-form__email-input" type="email" name="email" placeholder="Ваш Email*" required>
-          </fieldset>
+          </div>
+        </div>
 
-          <fieldset class="custom-form__group">
-            <legend class="custom-form__group-name">Доп</legend>
+        <div class="custom-form__group">
+          <div class="custom-form__wrapper">
+            <legend class="custom-form__group-name  custom-form__group-name--extra">Доп</legend>
             <textarea class="custom-form__extra-input" name="extra" id="extra" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+          </div>
+        </div>
 
+        <div class="custom-form__wrapper">
           <p class="custom-form__note">*Поля обязательны для заполнения</p>
 
           <input class="custom-form__send  btn  btn--send" type="submit" name="submit" value="Отправить заказ">
+        </div>
 
-        </form>
-      </div>
+      </form>
     </div>
 
     <footer class="page-footer">
