@@ -79,16 +79,27 @@
 
 @media #{$desktop-widths} {
 
+  .information__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 455px;
+  }
+
+  .information__picture {
+    width: 682px;
+  }
+
   .information__picture img {
     width: 682px;
     height: 455px;
   }
 
   .information__title {
-    margin-top: -455px;
-    padding-top: 101px;
+    width: 350px;
+    padding: 0;
+    padding-top: 100px;
     padding-right: 60px;
-    padding-left: 760px;
+    padding-left: 60px;
     border-top: none;
   }
 
@@ -97,8 +108,10 @@
   }
 
   .information__container {
-    padding-bottom: 50px;
+    width: 350px;
+    padding: 0;
+    padding-bottom: 60px;
     padding-right: 60px;
-    padding-left: 760px;
+    padding-left: 60px;
   }
 }
