@@ -4,6 +4,7 @@
 
 .information__wrapper {
   @include container;
+  box-shadow: inset 0 0 0 1px #ececec;
 }
 
 .information__title {
@@ -15,8 +16,8 @@
   padding-left: 90px;
   padding-right: 34px;
   color: #000000;
-  border: 1px solid #ececec;
-  border-bottom: none;
+  // border: 1px solid #ececec;
+  // border-bottom: none;
 }
 
 .information__picture img {
@@ -29,8 +30,8 @@
   padding-bottom: 35px;
   padding-left: 34px;
   padding-right: 34px;
-  border: 1px solid #ececec;
-  border-top: none;
+  // border: 1px solid #ececec;
+  // border-top: none;
 }
 
 .information__text {
@@ -63,6 +64,7 @@
     padding-bottom: 40px;
     padding-left: 105px;
     padding-right: 44px;
+    border-top: 1px solid #ececec;
   }
 
   .information__container {
@@ -100,6 +102,7 @@
     padding-top: 101px;
     padding-right: 60px;
     padding-left: 760px;
+    border-top: none;
   }
 
   .information__text{
