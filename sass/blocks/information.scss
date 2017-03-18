@@ -79,22 +79,13 @@
 
 @media #{$desktop-widths} {
 
-  .information__wrapper {
-    position: relative;
-  }
-
-  .information__picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .information__picture img {
     width: 682px;
     height: 455px;
   }
 
   .information__title {
+    margin-top: -455px;
     padding-top: 101px;
     padding-right: 60px;
     padding-left: 760px;
@@ -102,11 +93,11 @@
   }
 
   .information__text{
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .information__container {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     padding-right: 60px;
     padding-left: 760px;
   }
