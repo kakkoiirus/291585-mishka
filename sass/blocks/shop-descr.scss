@@ -1,6 +1,5 @@
 .shop-descr {
   padding-top: 78px;
-  padding-bottom: 78px;
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top center;
@@ -31,7 +30,8 @@
 @media #{$tablet-widths} {
 
   .shop-descr {
-    padding-top: 160px;
+    margin: -67px;
+    padding-top: 165px;
   }
 
   .shop-descr__title {
@@ -44,6 +44,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .shop-descr {
+    padding-top: 170px;
+  }
 
   .shop-descr__title {
     @include font(53px, 57px);
