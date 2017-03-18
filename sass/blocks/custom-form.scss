@@ -122,11 +122,7 @@
   .custom-form__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
 
-    &:last-child {
-      justify-content: space-between;
-    }
   }
 
   .custom-form__group-name {
@@ -197,6 +193,7 @@
     order: 2;
     align-self: center;
     margin: 0;
+    margin-left: auto;
   }
 
   .custom-form__send {
@@ -206,6 +203,11 @@
 }
 
 @media #{$desktop-widths} {
+
+  .custom-form__text {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 
   .custom-form__group-name {
     width: 175px;
@@ -235,5 +237,9 @@
   .custom-form__email-input,
   .custom-form__extra-input {
     width: 700px;
+  }
+
+  .custom-form__note {
+    padding-right: 175px;
   }
 }
