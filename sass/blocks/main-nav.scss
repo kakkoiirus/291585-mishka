@@ -30,10 +30,27 @@
   padding-right: 30px;
   border-bottom: 1px solid #ececec;
 
+  &--logo {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &--new,
   &--sale,
   &--delivery {
     display: none;
+  }
+}
+
+.main-nav__item a[href] {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -61,23 +78,28 @@
     border: none;
     border-top: 1px solid #dfdfdf;
 
+    &--logo {
+      order: 1;
+      width: 370px;
+      text-align: left;
+    }
+
     &--catalog {
-      order: 3;
+      order: 4;
       width: 217px;
       padding-right: 0;
     }
 
     &--form {
-      order: 4;
+      order: 5;
       width: 167px;
       padding-left: 0;
       padding-right: 0;
     }
 
     &--search {
-      order: 1;
+      order: 2;
       width: 84px;
-      margin-left: 370px;
       padding: 34px 30px;
       font-size: 0;
       background-color: #ffffff;
@@ -86,7 +108,7 @@
     }
 
     &--cart {
-      order: 2;
+      order: 3;
       width: 314px;
       padding-left: 83px;
       padding-right: 30px;
@@ -100,7 +122,7 @@
 
     &--delivery {
       @include font-normal(15px, 24px);
-      order: 5;
+      order: 6;
       display: block;
       width: 50%;
       padding-left: 0;
@@ -113,6 +135,13 @@
 @media #{$desktop-widths} {
 
   .main-nav__item {
+
+    &--logo {
+      order: 3;
+      width: 250px;
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     &--catalog {
       order: 1;
@@ -128,11 +157,11 @@
 
     &--form {
       order: 2;
-      width: 514px;
+      width: 265px;
       padding-top: 34px;
       padding-bottom: 34px;
       padding-left: 35px;
-      padding-right: 265px;
+      padding-right: 10px;
       font-size: 17px;
       background-color: #ffffff;
       border: none;
@@ -140,30 +169,30 @@
     }
 
     &--search {
-      order: 3;
+      order: 4;
       margin: 0;
     }
 
     &--cart {
-      order: 4;
+      order: 5;
     }
 
     &--new {
-      order: 5;
+      order: 6;
       display: block;
       width: 184px;
       padding-right: 0;
     }
 
     &--sale {
-      order: 6;
+      order: 7;
       display: block;
       width: 260px;
       padding-left: 35px;
     }
 
     &--delivery {
-      order: 7;
+      order: 8;
     }
   }
 }
