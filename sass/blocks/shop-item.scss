@@ -2,6 +2,14 @@
   margin-bottom: 30px;
 }
 
+.shop-item:hover .shop-item__wrapper {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.shop-item:active .shop-item__wrapper {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
 .shop-item__img {
   display: block;
   height: 195px;
@@ -17,6 +25,14 @@
   @include font-bold(17px, 24px);
   color: #000000;
   margin-bottom: 13px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .shop-item__descr {
