@@ -1,14 +1,142 @@
 .contact {
   padding-top: 37px;
-  padding-bottom: 38px;
+  margin-bottom: 40px;
+}
+
+.contact__wrapper {
+  @include container;
 }
 
 .contact__title {
   @include font-bold(18px, 30px);
   color: #000000;
+  margin-bottom: 33px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__email-value {
+  margin-bottom: 20px;
 }
 
 .contact__item,
 .contact__email-link {
   @include font-normal(15px, 30px);
+}
+
+.contact__email-link {
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contact__email-value,
+.contact__address-value {
+  width: 180px;
+}
+
+.contact__map {
+  width: 320px;
+  height: 457px;
+  margin: 0 auto;
+  margin-top: 37px;
+  margin-bottom: 40px;
+}
+
+@media #{$tablet-widths} {
+
+  .contact {
+    padding-top: 73px;
+    margin-bottom: 57px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact__title {
+    @include font(43px, 50px);
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .contact__item {
+    width: 50%;
+  }
+
+  .contact__item,
+  .contact__email-link {
+    @include font-normal(17px, 30px);
+  }
+
+  .contact__email-value,
+  .contact__address-value {
+    width: 260px;
+  }
+
+  .contact__address-value {
+    box-sizing: border-box;
+    padding-right: 38px;
+  }
+
+  .contact__map {
+    width: 768px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  .contact__write-us {
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .contact {
+    position: relative;
+    padding-top: 70px;
+    margin-bottom: 105px;
+  }
+
+  .contact__wrapper {
+    box-sizing: border-box;
+    padding-left: 175px;
+    padding-right: 525px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .contact__title {
+    @include font(53px, 57px);
+    margin-bottom: 60px;
+  }
+
+  .contact__item {
+    width: auto;
+  }
+
+  .contact__email-value {
+    margin-bottom: 37px;
+  }
+
+  .contact__address-value {
+    margin-bottom: 80px;
+  }
+
+  .contact__email-value,
+  .contact__address-value {
+    width: 275px;
+  }
+
+  .contact__map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 525px;
+    margin: 0;
+  }
 }

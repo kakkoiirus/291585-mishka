@@ -1,4 +1,8 @@
 .social-links {
-  list-style: none;
+  @include list-reset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 0;
 }

@@ -1,0 +1,26 @@
+.shop {
+  margin-top: 30px;
+}
+
+.shop__wrapper {
+  @include container;
+}
+
+@media #{$tablet-widths} {
+  .shop {
+    margin-top: 80px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .shop {
+    margin-top: 130px;
+  }
+
+  .shop__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,9 +1,19 @@
 body {
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   @include font-normal(15px, 30px);
   color: #444444;
   background-color: #ffffff;
+
+  @media #{$tablet-widths} {
+    width: 768px;
+
+  }
+
+  @media #{$desktop-widths} {
+    width: 1150px;
+  }
 }
 
 img {
@@ -14,19 +24,4 @@ img {
 a {
   color: #444444;
   text-decoration: none;
-}
-
-body > * {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-body > * > * {
-  outline: 2px solid green;
-  outline-offset: -2px;
-}
-
-body > * > * > * {
-  outline: 2px solid yellow;
-  outline-offset: -2px;
 }

@@ -8,28 +8,50 @@
   <body>
     <header class="page-header">
 
-      <div class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
-      </div>
-
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--logo">
+            <a>
+              <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+            </a>
+          </li>
+          <li class="main-nav__item  main-nav__item--catalog">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
 
-        </div>
+          <li class="main-nav__item  main-nav__item--form">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--new">
+            <a href="#">Новые поступления</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--sale">
+            <a href="#">Распродажа</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--delivery">
+            Бесплатная доставка по России
+          </li>
+        </ul>
+
       </nav>
     </header>
 
     <section class="shop-descr">
       <div class="shop-descr__wrapper">
-        <h2 class="shop-descr__title">Милые штуки ручной работы для дома</h2>
+        <h2 class="shop-descr__title  shop-descr__title--index">Милые штуки ручной работы для дома</h2>
       </div>
 
       <div class="shop-section">
@@ -45,28 +67,33 @@
 
     <section class="promo">
       <div class="promo__wrapper">
-        <h2 class="promo__title">Вязаные корзинки</h2>
-        <span class="promo__week">Товар недели</span>
-        <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="promo__header">
+          <h2 class="promo__title">Вязаные корзинки</h2>
+          <span class="promo__week">Товар недели</span>
+        </div>
 
-        <table class="promo__item-descr">
-          <tr>
-            <td class="promo__option">Цвет:</td>
-            <td class="promo__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="promo__option">Диаметр:</td>
-            <td class="promo__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="promo__option">Высота:</td>
-            <td class="promo__value">15 см</td>
-          </tr>
-        </table>
+        <div class="promo__body">
+          <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-        <img class="promo__image" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-        <div class="promo__price">Цена: 990 руб.</div>
-        <a class="promo__order  btn  btn--order" href="#">Заказать</a>
+          <table class="promo__item-descr">
+            <tr>
+              <td class="promo__option">Цвет:</td>
+              <td class="promo__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="promo__option">Диаметр:</td>
+              <td class="promo__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="promo__option">Высота:</td>
+              <td class="promo__value">15 см</td>
+            </tr>
+          </table>
+
+          <img class="promo__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+          <div class="promo__price">Цена: 990 руб.</div>
+          <a class="promo__order  btn  btn--order" href="#">Заказать</a>
+        </div>
 
       </div>
 
@@ -86,36 +113,35 @@
           <li class="about__item  about__item--five">Поддержка отечественного производителя</li>
           <li class="about__item  about__item--six">Поставляется в подарочной упаковке</li>
         </ul>
-
-        <div class="reviews">
-          <h3 class="reviews__title">Отзывы</h3>
-
-          <blockquote class="reviews__item">
-            <p>
-              Я молодая мама, но всё равно фотографии не
-              набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше
-              лайков!
-            </p>
-            <cite class="reviews__author">
-              <span class="reviews__author-name">Анастасия Красильникова</span>
-              <span class="reviews__author-nick">@misssssiskras</span>
-            </cite>
-          </blockquote>
-
-          <div class="revews__toggles">
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-
-          <a class="reviews__write  btn  btn--write" href="#">Написать</a>
-        </div>
-
       </div>
 
-      <div class="divider"></div>
+    </section>
 
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h3 class="reviews__title">Отзывы</h3>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__text">
+            Я молодая мама, но всё равно фотографии не
+            набирали и близко такого количества лайков, как у популярных
+            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+            и мои фотографии сразу стали более стильными, а также набирают больше
+            лайков!
+          </p>
+          <cite class="reviews__author">
+            <span class="reviews__author-name">Анастасия Красильникова</span>
+            <span class="reviews__author-nick">@misssssiskras</span>
+          </cite>
+        </blockquote>
+
+        <div class="reviews__toggles">
+          <button class="reviews__prev  btn  btn--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next  btn  btn--next" type="button">Следующий отзыв</button>
+        </div>
+
+        <a class="reviews__write  btn  btn--write" href="#">Написать</a>
+      </div>
     </section>
 
     <section class="contact">
@@ -130,7 +156,7 @@
         </div>
         <div class="contact__item">
           <div class="contact__address">адрес:</div>
-          <div class="contact__address-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+          <div class="contact__address-value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</div>
         </div>
       </div>
 
@@ -146,24 +172,29 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">Mishka</a>
+        </div>
+
         <div class="page-footer__social">
 
           <ul class="social-links">
-            <li class="social-link  social-link--in">
-              <a href="https://www.instagram.com/">Instagram</a>
+            <li>
+              <a class="social-link  social-link--in" href="https://www.instagram.com/">Instagram</a>
             </li>
-            <li class="social-link  social-link--fb">
-              <a href="https://www.facebook.com/">Facebook</a>
+            <li>
+              <a class="social-link  social-link--fb" href="https://www.facebook.com/">Facebook</a>
             </li>
-            <li class="social-link  social-link--tw">
-              <a href="https://twitter.com/">Twitter</a>
+            <li>
+              <a class="social-link  social-link--tw" href="https://twitter.com/">Twitter</a>
             </li>
           </ul>
 
         </div>
 
         <div class="page-footer__copyright">
-          Разработано
+          <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
 
@@ -177,13 +208,15 @@
         <form class="to-cart__size-form" action="https://echo.htmlacademy.ru/">
 
           <fieldset class="to-cart__fieldset">
-            <legend class="to-cart__legend">Выберите размер:</legend>
-            <input class="to-cart__radio" type="radio" name="size" id="s" checked>
-            <label class="to-cart__size" for="s">S</label>
-            <input class="to-cart__radio" type="radio" name="size" id="m">
-            <label class="to-cart__size" for="m">M</label>
-            <input class="to-cart__radio" type="radio" name="size" id="l">
-            <label class="to-cart__size" for="l">L</label>
+              <legend class="to-cart__legend">Выберите размер:</legend>
+              <div class="to-cart__size-group">
+                <input class="to-cart__radio" type="radio" name="size" id="s" checked>
+                <label class="to-cart__size  btn  btn--size" for="s">S</label>
+                <input class="to-cart__radio" type="radio" name="size" id="m">
+                <label class="to-cart__size  btn  btn--size" for="m">M</label>
+                <input class="to-cart__radio" type="radio" name="size" id="l">
+                <label class="to-cart__size  btn  btn--size" for="l">L</label>
+              </div>
           </fieldset>
 
           <button class="to-cart__submit  btn  btn--add" type="submit">Добавить</button>
@@ -192,6 +225,23 @@
 
       </div>
     </div>
+
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
   </body>
 </html>

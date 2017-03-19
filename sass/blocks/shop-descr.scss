@@ -1,11 +1,11 @@
 .shop-descr {
-  padding-top: 75px;
-  background-color: #fcfcfc;
+  padding-top: 78px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 
   &--grey {
+    padding-bottom: 78px;
     background-color: #f1f1f1;
     background-image: none;
     background-repeat: none;
@@ -20,25 +20,43 @@
   @include font-bold(27px, 30px);
   color: #010000;
   text-align: center;
+
+  &--index {
+    margin-bottom: 118px;
+  }
 }
 
 
 @media #{$tablet-widths} {
 
   .shop-descr {
-    padding-top: 160px;
+    margin-top: -67px;
+    padding-top: 165px;
   }
 
   .shop-descr__title {
     @include font(43px, 50px);
+
+    &--index {
+      margin-bottom: 368px;
+    }
   }
 }
 
 @media #{$desktop-widths} {
 
+  .shop-descr {
+    padding-top: 170px;
+  }
+
   .shop-descr__title {
     @include font(53px, 57px);
     padding: 0 218px;
+
+  }
+
+  &--index {
+    margin-bottom: 351px;
   }
 
 }
