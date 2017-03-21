@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 25px;
   background-color: #f1f1f1;
 }
@@ -13,10 +13,9 @@
 }
 
 .page-footer__social {
-  margin: 0 auto;
-  margin-bottom: 20px;
   padding-bottom: 25px;
-  width: 145px;
+  padding-left: 35px;
+  padding-right: 35px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -26,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-top: 15px;
   width: 184px;
 }
 

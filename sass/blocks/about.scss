@@ -1,6 +1,6 @@
 .about {
-  padding-top: 31px;
-  margin-bottom: 60px;
+  padding-top: 35px;
+  margin-bottom: 56px;
 }
 
 .about__wrapper {
@@ -10,6 +10,8 @@
 .about__title {
   @include font-bold(25px, 30px);
   color: #000000;
+  margin: 0;
+  margin-bottom: 2px;
 }
 
 .about__list {
@@ -21,7 +23,7 @@
 }
 
 .about__item {
-  padding-top: 90px;
+  padding-top: 83px;
 }
 
 @media #{$tablet-widths} {

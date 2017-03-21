@@ -1,5 +1,5 @@
 .contact {
-  padding-top: 37px;
+  padding-top: 51px;
   margin-bottom: 40px;
 }
 
@@ -10,17 +10,19 @@
 .contact__title {
   @include font-bold(18px, 30px);
   color: #000000;
-  margin-bottom: 33px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .contact__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 29px;
 }
 
 .contact__email-value {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .contact__item,
@@ -34,7 +36,7 @@
 
 .contact__email-value,
 .contact__address-value {
-  width: 180px;
+  width: 182px;
 }
 
 .contact__map {
