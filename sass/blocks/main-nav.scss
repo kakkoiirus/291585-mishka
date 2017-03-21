@@ -110,6 +110,8 @@
     box-sizing: border-box;
     flex-grow: 1;
     order: 100;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: transparent;
@@ -121,6 +123,7 @@
       width: 370px;
       text-align: left;
       background-color: #ffffff;
+      border: none;
     }
 
     &--catalog {
@@ -139,7 +142,10 @@
     &--search {
       order: 2;
       width: 84px;
-      padding: 34px 30px;
+      padding-top: 34px;
+      padding-bottom: 34px;
+      padding-left: 30px;
+      padding-right: 30px;
       font-size: 0;
       background-color: #ffffff;
       border: none;
@@ -149,10 +155,10 @@
     &--cart {
       order: 3;
       width: 314px;
-      padding-left: 83px;
-      padding-right: 30px;
       padding-top: 34px;
       padding-bottom: 34px;
+      padding-left: 83px;
+      padding-right: 30px;
       font-size: 17px;
       background-color: #ffffff;
       border: none;

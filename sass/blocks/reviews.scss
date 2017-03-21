@@ -51,7 +51,7 @@
     padding-top: 80px;
     padding-bottom: 47px;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 42px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
@@ -62,22 +62,26 @@
 
   .reviews__title {
     @include font(43px, 50px);
-    margin-bottom: 60px;
+    margin-bottom: 47px;
+  }
+
+  .reviews__item {
+    @include font(17px, 30px);
   }
 
   .reviews__text {
-    margin-bottom: 65px;
+    margin-bottom: 58px;
   }
 
   .reviews__author-name {
     @include font(17px, 24px);
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   .reviews__toggles {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     width: 175px;
     margin: 0;
   }

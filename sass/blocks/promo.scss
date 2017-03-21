@@ -63,15 +63,15 @@
 @media #{$tablet-widths} {
 
   .promo {
-    padding-top: 50px;
-    padding-bottom: 52px;
+    padding-top: 46px;
+    padding-bottom: 50px;
   }
 
   .promo__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .promo__title {
@@ -81,8 +81,10 @@
 
   .promo__week {
     @include font(17px, 17px);
-    margin: 10px 0 0 0;
-    width: 100px;
+    margin: 0;
+    margin-top: 10px;
+    width: 122px;
+    text-align: center;
   }
 
   .promo__body {
@@ -95,23 +97,32 @@
 
   .promo__descr {
     @include font(17px, 30px);
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 
   .promo__item-descr {
     margin-bottom: 35px;
   }
 
+  .promo__option {
+    width: 94px;
+  }
+
+  .promo__option,
+  .promo__value {
+    padding-bottom: 9px;
+  }
+
   .promo__image {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 0;
   }
 
   .promo__price {
     @include font(20px, 24px);
     margin-top: auto;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 

@@ -21,10 +21,6 @@
   margin-bottom: 29px;
 }
 
-.contact__email-value {
-  // margin-bottom: 20px;
-}
-
 .contact__item,
 .contact__email-link {
   @include font-normal(15px, 30px);
@@ -63,11 +59,12 @@
   .contact__title {
     @include font(43px, 50px);
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .contact__item {
     width: 50%;
+    margin-bottom: 55px;
   }
 
   .contact__item,
@@ -87,7 +84,7 @@
 
   .contact__map {
     width: 768px;
-    margin-top: 55px;
+    margin: 0;
     margin-bottom: 55px;
   }
 

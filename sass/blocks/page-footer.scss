@@ -13,6 +13,7 @@
 }
 
 .page-footer__social {
+  box-sizing: border-box;
   padding-bottom: 25px;
   padding-left: 35px;
   padding-right: 35px;
@@ -47,8 +48,8 @@
 @media #{$tablet-widths} {
 
   .page-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .page-footer__wrapper {
@@ -60,15 +61,21 @@
 
   .page-footer__logo {
     display: block;
+    width: 184px;
   }
 
   .page-footer__social {
+    width: 300px;
     margin: 0;
     padding: 0;
-    border-bottom: none;
+    padding-left: 60px;
+    padding-right: 65px;
+    border: none;
   }
 
   .page-footer__copyright {
+    width: 184px;
     margin: 0;
+    padding: 0;
   }
 }
