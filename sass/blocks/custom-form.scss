@@ -1,6 +1,20 @@
 .custom-form {
-  padding-top: 25px;
+  padding-top: 21px;
   margin-bottom: 55px;
+}
+
+.custom-form__group {
+  padding-bottom: 21px;
+
+  &--tel,
+  &--email,
+  &--extra {
+    padding-top: 12px;
+  }
+
+  &--extra {
+    padding-bottom: 5px;
+  }
 }
 
 .custom-form__wrapper {
@@ -11,7 +25,7 @@
   @include font-normal(13px, 24px);
   color: #444444;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .custom-form__form {
@@ -22,20 +36,24 @@
 .custom-form__group-name {
   @include font-bold(17px, 16px);
   color: #63d1bb;
+  text-transform: uppercase;
 
-  &--type,
+  &--type {
+    margin-bottom: 33px;
+  }
+
   &--color {
-    margin-bottom: 28px;
+    margin-bottom: 37px;
   }
 
   &--fullname {
-    margin-bottom: 37px;
+    margin-bottom: 28px;
   }
 
   &--tel,
   &--email,
   &--extra {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -54,12 +72,44 @@
 
 .custom-form__type-label,
 .custom-form__color-label {
+  min-height: 40px;
+}
+
+.custom-form__type-label,
+.custom-form__color-label {
+  position: relative;
   padding-left: 62px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
+}
+
+.custom-form__type-label:last-child,
+.custom-form__color-label:last-child {
+  margin-bottom: 0;
+}
+
+.custom-form__type-label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.custom-form__color-label::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #444444;
 }
 
 .custom-form__name-label {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .custom-form__text-input,
@@ -71,14 +121,20 @@
   color: #444444;
   width: 100%;
   padding-bottom: 15px;
-  margin-bottom: 25px;
   border: none;
   border-bottom: 2px solid #000000;
 }
 
+.custom-form__text-input {
+  margin-bottom: 22px;
+}
+
+.custom-form__text-input:last-child {
+  margin-bottom: 0;
+}
+
 .custom-form__extra-input {
   box-sizing: border-box;
-  margin-bottom: 21px;
   padding: 18px;
   border: 2px solid #000000;
   resize: none;
@@ -88,7 +144,7 @@
   @include font-normal(14px, 16px);
   color: #444444;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 }
 
 @media #{$tablet-widths} {
