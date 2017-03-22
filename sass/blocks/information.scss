@@ -83,6 +83,10 @@
 
 @media #{$desktop-widths} {
 
+  .information {
+    margin-bottom: 105px;
+  }
+
   .information__wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -101,22 +105,22 @@
   .information__title {
     width: 350px;
     padding: 0;
-    padding-top: 100px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 95px;
+    padding-right: 58px;
+    padding-left: 72px;
     border-top: none;
   }
 
-  .information__text {
-    margin-bottom: 44px;
-  }
-
   .information__container {
-    width: 350px;
+    width: 355px;
     max-height: 270px;
     padding: 0;
-    padding-bottom: 60px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-bottom: 62px;
+    padding-right: 53px;
+    padding-left: 72px;
+  }
+
+  .information__text {
+    margin-bottom: 40px;
   }
 }
