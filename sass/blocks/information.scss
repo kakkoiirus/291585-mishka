@@ -39,6 +39,10 @@
 
 @media #{$tablet-widths} {
 
+  .information {
+    margin-bottom: 61px;
+  }
+
   .information__wrapper {
     display: flex;
     flex-direction: column;
@@ -56,8 +60,8 @@
   .information__title {
     @include font(20px, 24px);
     order: 2;
-    padding-top: 43px;
-    padding-bottom: 40px;
+    padding-top: 38px;
+    padding-bottom: 31px;
     padding-left: 105px;
     padding-right: 44px;
     border-top: 1px solid #ececec;
@@ -67,8 +71,8 @@
     order: 3;
     padding-top: 0;
     padding-bottom: 48px;
-    padding-right: 44px;
-    padding-left: 44px;
+    padding-right: 42px;
+    padding-left: 42px;
   }
 
   .information__text {

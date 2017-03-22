@@ -89,7 +89,10 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 334px;
-    padding: 32px 33px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+    padding-left: 29px;
+    padding-right: 29px;
     border-left: none;
   }
 
@@ -103,6 +106,7 @@
 
   .shop-item__price {
     margin-top: auto;
+    padding-left: 2px;
   }
 
   .shop-item__price-value {
