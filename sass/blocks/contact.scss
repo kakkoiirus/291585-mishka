@@ -97,7 +97,7 @@
 
   .contact {
     position: relative;
-    padding-top: 70px;
+    padding-top: 145px;
     margin-bottom: 105px;
   }
 
@@ -111,31 +111,39 @@
 
   .contact__title {
     @include font(53px, 57px);
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .contact__item {
     width: auto;
+    margin: 0;
   }
 
+  .contact__email,
   .contact__email-value {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
   }
 
+  .contact__address,
   .contact__address-value {
     margin-bottom: 80px;
   }
 
   .contact__email-value,
   .contact__address-value {
-    width: 275px;
+    width: 274px;
   }
 
   .contact__map {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 75px;
+    right: 50px;
     width: 525px;
+    height: 457px;
+    margin: 0;
+  }
+
+  .contact__write-us {
     margin: 0;
   }
 }

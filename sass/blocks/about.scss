@@ -1,6 +1,6 @@
 .about {
   padding-top: 35px;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
 }
 
 .about__wrapper {
@@ -82,12 +82,16 @@
 
 @media #{$desktop-widths} {
 
+  .about {
+    padding-top: 62px;
+    padding-bottom: 7px;
+  }
+
   .about__wrapper {
     width: 700px;
   }
 
   .about__title {
     @include font(53px, 57px);
-    padding-top: 110px;
   }
 }

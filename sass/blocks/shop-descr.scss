@@ -52,17 +52,16 @@
 @media #{$desktop-widths} {
 
   .shop-descr {
-    padding-top: 170px;
+    padding-top: 160px;
   }
 
   .shop-descr__title {
     @include font(53px, 57px);
     padding: 0 218px;
 
-  }
-
-  &--index {
-    margin-bottom: 351px;
+    &--index {
+      margin-bottom: 358px;
+    }
   }
 
 }

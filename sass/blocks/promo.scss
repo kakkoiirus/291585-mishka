@@ -129,7 +129,8 @@
 @media #{$desktop-widths} {
 
   .promo {
-    padding-top: 70px;
+    padding-top: 123px;
+    padding-bottom: 23px;
   }
 
   .promo__wrapper {
@@ -155,17 +156,20 @@
 
   .promo__body {
     position: static;
+    padding: 0;
+    padding-bottom: 50px;
     padding-left: 175px;
     width: 292px;
-    min-height: 520px;
+    min-height: 478px;
   }
 
   .promo__descr {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
   }
 
   .promo__image {
     z-index: -10;
+    top: -50px;
     width: 525px;
     height: 636px;
   }

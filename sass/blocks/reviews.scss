@@ -98,7 +98,9 @@
 
   .reviews {
     width: 1050px;
-    margin: auto;
+    margin-bottom: 65px;
+    padding-top: 70px;
+    padding-bottom: 65px;
   }
 
   .reviews__wrapper {
@@ -108,5 +110,13 @@
 
   .reviews__title {
     @include font(53px, 57px);
+  }
+
+  .reviews__text {
+    margin-bottom: 40px;
+  }
+
+  .reviews__write {
+    top: 8px;
   }
 }
