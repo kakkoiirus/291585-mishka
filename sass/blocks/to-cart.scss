@@ -1,7 +1,7 @@
 .to-cart {
   position: fixed;
   display: none;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   margin-top: -170px;
   margin-left: -160px;
@@ -62,7 +62,8 @@
 
   .to-cart {
     width: 568px;
-    margin: 0 auto;
+    left: 50%;
+    margin-left: -284px;
   }
 
   .to-cart__wrapper {
