@@ -318,13 +318,30 @@
 
 @media #{$desktop-widths} {
 
+  .custom-form {
+    padding-top: 122px;
+  }
+
   .custom-form__text {
     padding-left: 175px;
     padding-right: 175px;
   }
 
+  .custom-form__group {
+
+    &--fullname {
+      padding-top: 63px;
+    }
+  }
+
   .custom-form__group-name {
+    box-sizing: border-box;
     width: 175px;
+    padding-left: 62px;
+
+    &--fullname {
+      padding-top: 2px;
+    }
   }
 
   .custom-form__values {
@@ -332,7 +349,9 @@
 
     &--color {
       width: 875px;
+      justify-content: flex-start;
     }
+
   }
 
   .custom-form__color-label {
@@ -340,7 +359,8 @@
   }
 
   .custom-form__name-label {
-    width: 305px;
+    width: auto;
+    padding-right: 24px;
   }
 
   .custom-form__text-input {
@@ -355,5 +375,9 @@
 
   .custom-form__note {
     padding-right: 175px;
+  }
+
+  .custom-form__send{
+    margin-left: 175px;
   }
 }
