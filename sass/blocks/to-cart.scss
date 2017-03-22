@@ -53,6 +53,11 @@
   display: none;
 }
 
+.to-cart__radio:checked + .to-cart__size {
+  color: #444444;
+  border-color: #62d1ba;
+}
+
 @media #{$tablet-widths} {
 
   .to-cart {
