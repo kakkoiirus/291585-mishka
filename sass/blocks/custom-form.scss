@@ -118,9 +118,10 @@
 .custom-form__extra-input {
   font: inherit;
   @include font-normal(17px, 18px);
-  color: #444444;
+  box-sizing: border-box;
   width: 100%;
   padding-bottom: 15px;
+  color: #444444;
   border: none;
   border-bottom: 2px solid #000000;
 }
@@ -156,22 +157,39 @@
 
   .custom-form__text {
     @include font(17px, 30px);
+    margin-bottom: 20px;
   }
 
   .custom-form__group {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-top: 55px;
+    padding-bottom: 48px;
 
     &--grey {
       background-color: #f1f1f1;
+      padding-top: 65px;
+    }
+
+    &--color {
+      padding-bottom: 10px;
+    }
+
+    &--fullname {
+      padding-top: 65px;
+      padding-bottom: 8px;
     }
 
     &--tel {
-      padding-bottom: 15px;
+      padding-top: 70px;
+      padding-bottom: 20px;
     }
 
     &--email {
-      padding-top: 0;
+      padding-top: 20px;
+    }
+
+    &--extra {
+      padding-top: 70px;
+      padding-bottom: 51px;
     }
   }
 
@@ -184,6 +202,7 @@
   .custom-form__group-name {
     box-sizing: border-box;
     width: 167px;
+    margin: 0;
   }
 
   .custom-form__values {
@@ -193,6 +212,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &--fullname {
@@ -213,9 +233,39 @@
     @include font(19px, 18px);
   }
 
+  .custom-form__type-label {
+    margin-bottom: 35px;
+  }
+
+  .custom-form__type-label::before {
+    top: -18px;
+    width: 48px;
+    height: 48px;
+  }
+
   .custom-form__color-label {
     box-sizing: border-box;
-    width: 50%;
+    width: 238px;
+    margin-bottom: 36px;
+  }
+
+  .custom-form__color-label:last-child {
+    margin-bottom: 35px;
+  }
+
+  .custom-form__color-label::before {
+    top: -18px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .custom-form__name-label,
+  .custom-form__text-input {
+    margin-bottom: 40px;
+  }
+
+  .custom-form__text-input:last-child {
+    margin-bottom: 40px;
   }
 
   .custom-form__name-label {
@@ -228,7 +278,10 @@
   .custom-form__tel-input,
   .custom-form__email-input,
   .custom-form__extra-input {
-    @include font(19pz, 18px);
+    @include font(19px, 18px);
+    padding-left: 18px;
+    padding-bottom: 14px;
+    margin-top: -7px;
   }
 
   .custom-form__tel-input,
@@ -242,6 +295,11 @@
     flex-grow: 1;
     width: auto;
     min-width: 370px;
+  }
+
+  .custom-form__extra-input {
+    margin-top: -18px;
+    padding: 16px;
   }
 
   .custom-form__note {
