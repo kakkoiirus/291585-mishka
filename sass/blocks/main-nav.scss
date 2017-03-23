@@ -1,7 +1,7 @@
 .main-nav {
   @include font-bold(17px, 24px);
   position: relative;
-  min-height: 80px;
+  min-height: 83px;
   color: #000000;
 }
 
@@ -110,6 +110,8 @@
     box-sizing: border-box;
     flex-grow: 1;
     order: 100;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: transparent;
@@ -121,6 +123,7 @@
       width: 370px;
       text-align: left;
       background-color: #ffffff;
+      border: none;
     }
 
     &--catalog {
@@ -139,7 +142,10 @@
     &--search {
       order: 2;
       width: 84px;
-      padding: 34px 30px;
+      padding-top: 34px;
+      padding-bottom: 34px;
+      padding-left: 30px;
+      padding-right: 30px;
       font-size: 0;
       background-color: #ffffff;
       border: none;
@@ -149,10 +155,10 @@
     &--cart {
       order: 3;
       width: 314px;
-      padding-left: 83px;
-      padding-right: 30px;
       padding-top: 34px;
       padding-bottom: 34px;
+      padding-left: 83px;
+      padding-right: 30px;
       font-size: 17px;
       background-color: #ffffff;
       border: none;
@@ -219,14 +225,14 @@
     &--new {
       order: 6;
       display: block;
-      width: 184px;
+      width: 192px;
       padding-right: 0;
     }
 
     &--sale {
       order: 7;
       display: block;
-      width: 260px;
+      width: 252px;
       padding-left: 35px;
     }
 

@@ -1,5 +1,5 @@
 .contact {
-  padding-top: 37px;
+  padding-top: 51px;
   margin-bottom: 40px;
 }
 
@@ -10,17 +10,15 @@
 .contact__title {
   @include font-bold(18px, 30px);
   color: #000000;
-  margin-bottom: 33px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .contact__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.contact__email-value {
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .contact__item,
@@ -34,7 +32,7 @@
 
 .contact__email-value,
 .contact__address-value {
-  width: 180px;
+  width: 182px;
 }
 
 .contact__map {
@@ -48,7 +46,7 @@
 @media #{$tablet-widths} {
 
   .contact {
-    padding-top: 73px;
+    padding-top: 63px;
     margin-bottom: 57px;
   }
 
@@ -61,11 +59,12 @@
   .contact__title {
     @include font(43px, 50px);
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .contact__item {
     width: 50%;
+    margin-bottom: 55px;
   }
 
   .contact__item,
@@ -85,7 +84,7 @@
 
   .contact__map {
     width: 768px;
-    margin-top: 55px;
+    margin: 0;
     margin-bottom: 55px;
   }
 
@@ -98,7 +97,7 @@
 
   .contact {
     position: relative;
-    padding-top: 70px;
+    padding-top: 145px;
     margin-bottom: 105px;
   }
 
@@ -112,31 +111,39 @@
 
   .contact__title {
     @include font(53px, 57px);
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .contact__item {
     width: auto;
+    margin: 0;
   }
 
+  .contact__email,
   .contact__email-value {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
   }
 
+  .contact__address,
   .contact__address-value {
     margin-bottom: 80px;
   }
 
   .contact__email-value,
   .contact__address-value {
-    width: 275px;
+    width: 274px;
   }
 
   .contact__map {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 75px;
+    right: 50px;
     width: 525px;
+    height: 457px;
+    margin: 0;
+  }
+
+  .contact__write-us {
     margin: 0;
   }
 }

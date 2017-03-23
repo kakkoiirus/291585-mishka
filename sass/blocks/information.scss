@@ -12,7 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding-top: 25px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   padding-left: 90px;
   padding-right: 34px;
   color: #000000;
@@ -24,7 +24,7 @@
 
 .information__container {
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 35px;
   padding-left: 34px;
   padding-right: 34px;
@@ -38,6 +38,10 @@
 }
 
 @media #{$tablet-widths} {
+
+  .information {
+    margin-bottom: 61px;
+  }
 
   .information__wrapper {
     display: flex;
@@ -56,8 +60,8 @@
   .information__title {
     @include font(20px, 24px);
     order: 2;
-    padding-top: 43px;
-    padding-bottom: 40px;
+    padding-top: 38px;
+    padding-bottom: 31px;
     padding-left: 105px;
     padding-right: 44px;
     border-top: 1px solid #ececec;
@@ -67,8 +71,8 @@
     order: 3;
     padding-top: 0;
     padding-bottom: 48px;
-    padding-right: 44px;
-    padding-left: 44px;
+    padding-right: 42px;
+    padding-left: 42px;
   }
 
   .information__text {
@@ -78,6 +82,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .information {
+    margin-bottom: 105px;
+  }
 
   .information__wrapper {
     flex-wrap: wrap;
@@ -97,22 +105,22 @@
   .information__title {
     width: 350px;
     padding: 0;
-    padding-top: 100px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 95px;
+    padding-right: 58px;
+    padding-left: 72px;
     border-top: none;
   }
 
-  .information__text {
-    margin-bottom: 44px;
-  }
-
   .information__container {
-    width: 350px;
+    width: 355px;
     max-height: 270px;
     padding: 0;
-    padding-bottom: 60px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-bottom: 62px;
+    padding-right: 53px;
+    padding-left: 72px;
+  }
+
+  .information__text {
+    margin-bottom: 40px;
   }
 }

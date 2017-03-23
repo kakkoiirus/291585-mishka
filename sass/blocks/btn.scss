@@ -3,7 +3,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 16px 0;
+  padding: 14px 0;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -74,10 +74,12 @@
 
   &--send {
     @include font(17px, 16px);
+    padding: 15px 0;
   }
 
   &--make-order {
     @include font(17px, 16px);
+    padding: 15px 0;
   }
 
   &--size {

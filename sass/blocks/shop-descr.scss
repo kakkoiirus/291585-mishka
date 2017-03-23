@@ -1,10 +1,11 @@
 .shop-descr {
-  padding-top: 78px;
+  padding-top: 65px;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: top center;
+  background-position: center -20px;
   background-repeat: no-repeat;
 
   &--grey {
+    padding-top: 65px;
     padding-bottom: 78px;
     background-color: #f1f1f1;
     background-image: none;
@@ -18,11 +19,12 @@
 
 .shop-descr__title {
   @include font-bold(27px, 30px);
+  margin: 0;
   color: #010000;
   text-align: center;
 
   &--index {
-    margin-bottom: 118px;
+    margin-bottom: 122px;
   }
 }
 
@@ -31,14 +33,18 @@
 
   .shop-descr {
     margin-top: -67px;
-    padding-top: 165px;
+    padding-top: 160px;
+
+    &--grey {
+      padding-top: 102px;
+    }
   }
 
   .shop-descr__title {
     @include font(43px, 50px);
 
     &--index {
-      margin-bottom: 368px;
+      margin-bottom: 372px;
     }
   }
 }
@@ -46,17 +52,21 @@
 @media #{$desktop-widths} {
 
   .shop-descr {
-    padding-top: 170px;
+    padding-top: 160px;
+
+    &--grey {
+      padding-top: 100px;
+      padding-bottom: 103px;
+    }
   }
 
   .shop-descr__title {
     @include font(53px, 57px);
     padding: 0 218px;
 
-  }
-
-  &--index {
-    margin-bottom: 351px;
+    &--index {
+      margin-bottom: 358px;
+    }
   }
 
 }

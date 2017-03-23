@@ -1,0 +1,13 @@
+@media #{$tablet-widths} {
+
+  .divider {
+    min-height: 17px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .divider {
+    min-height: 23px;
+  }
+}

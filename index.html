@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,7 +15,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--logo">
             <a>
-              <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
             </a>
           </li>
           <li class="main-nav__item  main-nav__item--catalog">
@@ -92,14 +93,14 @@
 
           <img class="promo__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
           <div class="promo__price">Цена: 990 руб.</div>
-          <a class="promo__order  btn  btn--order" href="#">Заказать</a>
+          <a class="promo__order  btn  btn--order">Заказать</a>
         </div>
 
       </div>
 
-      <div class="divider"></div>
-
     </section>
+
+    <div class="divider"></div>
 
     <section class="about">
       <div class="about__wrapper">
@@ -143,6 +144,8 @@
         <a class="reviews__write  btn  btn--write" href="#">Написать</a>
       </div>
     </section>
+
+    <div class="divider"></div>
 
     <section class="contact">
       <div class="contact__wrapper">
@@ -226,22 +229,7 @@
       </div>
     </div>
 
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 
   </body>
 </html>
