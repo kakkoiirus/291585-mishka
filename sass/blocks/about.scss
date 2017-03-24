@@ -1,5 +1,5 @@
 .about {
-  padding-top: 35px;
+  padding-top: 27px;
   padding-bottom: 56px;
 }
 
@@ -23,7 +23,43 @@
 }
 
 .about__item {
+  position: relative;
   padding-top: 83px;
+}
+
+.about__icon {
+  position: absolute;
+  fill: #63d1bb;
+
+  &--one {
+    top: 27px;
+    left: 9px;
+  }
+
+  &--two {
+    top: 31px;
+    left: 0;
+  }
+
+  &--three {
+    top: 36px;
+    left: 7px;
+  }
+
+  &--four {
+    top: 32px;
+    left: 4px;
+  }
+
+  &--five {
+    top: 32px;
+    left: -6px;
+  }
+
+  &--six{
+    top: 32px;
+    left: 2px;
+  }
 }
 
 @media #{$tablet-widths} {

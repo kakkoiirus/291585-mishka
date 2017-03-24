@@ -7,6 +7,7 @@
 
 .shop-section__link {
   @include font-bold(19px, 24px);
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding-top: 28px;
@@ -22,6 +23,22 @@
 
   &--toys {
     background-color: #56c3b2;
+  }
+}
+
+.shop-section__icon {
+  position: absolute;
+
+  &--interior {
+    top: 23px;
+    right: 36px;
+    fill: #3bb09d;
+  }
+
+  &--toys {
+    top: 20px;
+    right: 23px;
+    fill: #35a999;
   }
 }
 

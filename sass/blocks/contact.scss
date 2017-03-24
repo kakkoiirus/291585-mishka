@@ -1,5 +1,5 @@
 .contact {
-  padding-top: 51px;
+  padding-top: 36px;
   margin-bottom: 40px;
 }
 
@@ -26,13 +26,40 @@
   @include font-normal(15px, 30px);
 }
 
-.contact__email-link {
-  border-bottom: 1px solid #62d1ba;
-}
-
 .contact__email-value,
 .contact__address-value {
   width: 182px;
+}
+
+.contact__email-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: #62d1ba;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:hover::after {
+    color: #46c1ae;
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    width: 88%;
+  }
 }
 
 .contact__map {

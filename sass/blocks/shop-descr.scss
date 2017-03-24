@@ -7,8 +7,11 @@
   background-size: 575px auto;
 
   @media #{$retina} {
-
     background-image: url("../img/hero-mobile@2x.jpg");
+
+    &--grey {
+      background-image: none;
+    }
   }
 
   &--grey {
@@ -46,6 +49,7 @@
 
     &--grey {
       padding-top: 102px;
+      background-image: none;
     }
   }
 
@@ -63,6 +67,10 @@
 
   .shop-descr {
     background-image: url("../img/hero-desktop@2x.jpg");
+
+    &--grey {
+      background-image: none;
+    }
   }
 }
 
