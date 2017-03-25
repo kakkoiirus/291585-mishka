@@ -69,6 +69,18 @@
     width: 334px;
     min-height: 120px;
     padding: 28px 170px 30px 35px;
+
+    &--interior:hover {
+      padding-bottom: 35px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+
+    &--toys:hover {
+      padding-bottom: 35px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
   }
 
   .shop-section__icon {

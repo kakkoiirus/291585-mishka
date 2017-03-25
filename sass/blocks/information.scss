@@ -5,6 +5,16 @@
 .information__wrapper {
   @include container;
   box-shadow: inset 0 0 0 1px #ececec;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #ececec,
+                0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px #ececec,
+                0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .information__title-icon {
