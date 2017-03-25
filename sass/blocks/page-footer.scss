@@ -70,6 +70,19 @@
   .page-footer__logo {
     display: block;
     width: 184px;
+    font-size: 0;
+  }
+
+  .page-footer__logo-icon {
+    fill: #231f20;
+  }
+
+  .page-footer__logo a[href]:hover .page-footer__logo-icon {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo a[href]:active .page-footer__logo-icon {
+    opacity: 0.3;
   }
 
   .page-footer__social {
