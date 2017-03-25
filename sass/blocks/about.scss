@@ -115,23 +115,6 @@
     }
   }
 
-}
-
-@media #{$desktop-widths} {
-
-  .about {
-    padding-top: 62px;
-    padding-bottom: 7px;
-  }
-
-  .about__wrapper {
-    width: 700px;
-  }
-
-  .about__title {
-    @include font(53px, 57px);
-  }
-
   .about__icon {
 
     &--one {
@@ -157,5 +140,22 @@
     &--six{
       top: 59px;
     }
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .about {
+    padding-top: 62px;
+    padding-bottom: 7px;
+  }
+
+  .about__wrapper {
+    width: 700px;
+  }
+
+  .about__title {
+    @include font(53px, 57px);
   }
 }
