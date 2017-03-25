@@ -1,13 +1,13 @@
 .main-nav {
   @include font-bold(17px, 24px);
   position: relative;
-  min-height: 83px;
+  min-height: 80px;
   color: #000000;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 27px;
+  top: 32px;
   right: 30px;
   width: 20px;
   height: 20px;
@@ -23,7 +23,6 @@
 
 .main-nav__list {
   @include list-reset;
-  border-top: 1px solid #ececec;
 }
 
 .main-nav__item {
@@ -37,8 +36,15 @@
 
   &--logo {
     text-align: center;
+    padding-top: 24px;
+    padding-bottom: 15px;
     padding-left: 0;
     padding-right: 0;
+    border-bottom: none;
+  }
+
+  &--catalog {
+    border-top: 1px solid #ececec;
   }
 
   &--new,
@@ -95,6 +101,10 @@
 
 @media #{$tablet-widths} {
 
+  .main-nav {
+    min-height: 88px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -116,21 +126,20 @@
     padding-right: 50px;
     background-color: transparent;
     border: none;
-    border-top: 1px solid #dfdfdf;
 
     &--logo {
+      align-self: center;
       order: 1;
       width: 370px;
-      padding-top: 24px;
-      padding-bottom: 12px;
+      padding-top: 0;
+      padding-bottom: 0;
       text-align: left;
       background-color: #ffffff;
-      border: none;
     }
 
     &--logo img {
-      width: 116px;
-      height: 50px;
+      width: 113px;
+      height: 46px;
     }
 
     &--catalog {
@@ -149,7 +158,7 @@
     &--search {
       order: 2;
       width: 84px;
-      padding-top: 36px;
+      padding-top: 31px;
       padding-bottom: 32px;
       padding-left: 30px;
       padding-right: 30px;
@@ -162,7 +171,7 @@
     &--cart {
       order: 3;
       width: 314px;
-      padding-top: 36px;
+      padding-top: 31px;
       padding-bottom: 32px;
       padding-left: 83px;
       padding-right: 30px;

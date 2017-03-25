@@ -95,8 +95,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 334px;
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 22px;
     padding-left: 29px;
     padding-right: 29px;
     border-left: none;
@@ -124,7 +124,7 @@
 
   .shop-item {
     flex-direction: column;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .shop-item__img {
@@ -140,5 +140,9 @@
     padding-right: 30px;
     padding-left: 26px;
     border: 1px solid #ededed;
+  }
+
+  .shop-item__price {
+    padding-top: 17px;
   }
 }
