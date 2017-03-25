@@ -58,9 +58,12 @@
   }
 
   &--tel,
-  &--email,
-  &--extra {
+  &--email {
     margin-bottom: 18px;
+  }
+
+  &--extra {
+    margin-bottom: 25px;
   }
 }
 
@@ -212,6 +215,7 @@
 .custom-form__tel,
 .custom-form__email {
   position: relative;
+  z-index: 10;
 }
 
 .custom-form__tel-icon {
@@ -254,7 +258,9 @@
 
 .custom-form__extra-input {
   box-sizing: border-box;
-  padding: 18px;
+  height: 142px;
+  padding: 15px;
+  margin-bottom: 10px;
   border: 2px solid #000000;
   resize: none;
 }
@@ -303,6 +309,7 @@
 
     &--email {
       padding-top: 20px;
+      z-index: -2;
     }
 
     &--extra {
@@ -319,7 +326,13 @@
   .custom-form__group-name {
     box-sizing: border-box;
     width: 167px;
+    padding-right: 0;
     margin: 0;
+    background-color: transparent;
+  }
+
+  .custom-form__group-name::after {
+    display: none;
   }
 
   .custom-form__values {
@@ -429,6 +442,7 @@
   }
 
   .custom-form__extra-input {
+    margin: 0;
     margin-top: -18px;
     padding: 16px;
   }
