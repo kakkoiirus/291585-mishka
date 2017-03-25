@@ -14,6 +14,10 @@
   margin-bottom: 26px;
 }
 
+.contact__icon {
+  display: none;
+}
+
 .contact__item {
   display: flex;
   flex-direction: row;
@@ -63,7 +67,7 @@
 }
 
 .contact__map {
-  width: 320px;
+  width: 100%;
   height: 457px;
   margin: 0 auto;
   margin-top: 37px;
@@ -81,12 +85,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .contact__title {
     @include font(43px, 50px);
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .contact__icon {
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: 0;
   }
 
   .contact__item {
@@ -110,7 +122,6 @@
   }
 
   .contact__map {
-    width: 768px;
     margin: 0;
     margin-bottom: 55px;
   }
@@ -139,6 +150,12 @@
   .contact__title {
     @include font(53px, 57px);
     margin-bottom: 48px;
+  }
+
+  .contact__icon {
+    right: auto;
+    top: -8px;
+    left: 62px;
   }
 
   .contact__item {

@@ -100,3 +100,10 @@
     padding: 0;
   }
 }
+
+@media #{$desktop-widths} {
+
+  .page-footer__copyright {
+    align-self: baseline;
+  }
+}

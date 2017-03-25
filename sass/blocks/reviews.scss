@@ -51,8 +51,9 @@
     padding-top: 80px;
     padding-bottom: 37px;
     margin: 0 auto;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
     background-image: url("../../img/review@1x.jpg");
+    background-size: 350px auto;
     background-repeat: no-repeat;
   }
 
@@ -91,7 +92,15 @@
     right: 0;
     top: 0;
   }
+}
 
+@media #{$tablet-widths} and #{$retina-dpi},
+       #{$tablet-widths} and #{$retina-dppx} {
+
+  .reviews {
+    background-image: url("../../img/review@2x.jpg");
+    background-size: 350px auto;
+  }
 }
 
 @media #{$desktop-widths} {

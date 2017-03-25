@@ -65,7 +65,7 @@
 @media #{$tablet-widths} {
 
   .about {
-    padding-top: 85px;
+    padding-top: 47px;
     padding-bottom: 0;
   }
 
@@ -130,5 +130,32 @@
 
   .about__title {
     @include font(53px, 57px);
+  }
+
+  .about__icon {
+
+    &--one {
+      top: 44px;
+    }
+
+    &--two {
+      top: 58px;
+    }
+
+    &--three {
+      top: 63px;
+    }
+
+    &--four {
+      top: 50px;
+    }
+
+    &--five {
+      top: 60px;
+    }
+
+    &--six{
+      top: 59px;
+    }
   }
 }

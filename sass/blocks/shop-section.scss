@@ -13,7 +13,7 @@
   padding-top: 28px;
   padding-right: 150px;
   padding-bottom: 28px;
-  padding-left: 25px;
+  padding-left: 27px;
   color: #ffffff;
   text-decoration: none;
 
@@ -67,7 +67,20 @@
   .shop-section__link {
     @include font(20px, 30px);
     width: 334px;
-    padding: 30px 170px 30px 35px;
+    min-height: 120px;
+    padding: 28px 170px 30px 35px;
+  }
+
+  .shop-section__icon {
+
+    &--interior {
+      top: 30px;
+    }
+
+    &--toys {
+      top: 30px;
+      right: 33px;
+    }
   }
 }
 
