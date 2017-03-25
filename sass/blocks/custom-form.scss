@@ -72,14 +72,11 @@
 
 .custom-form__type-label,
 .custom-form__color-label {
-  min-height: 40px;
-}
-
-.custom-form__type-label,
-.custom-form__color-label {
   position: relative;
   padding-left: 62px;
   margin-bottom: 21px;
+  min-height: 40px;
+  cursor: pointer;
 }
 
 .custom-form__type-label:last-child,
@@ -87,7 +84,9 @@
   margin-bottom: 0;
 }
 
-.custom-form__type-label::before {
+.custom-form__type-label {
+
+  &::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -96,6 +95,15 @@
   height: 36px;
   border: 2px solid #444444;
   border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: #c7c7c7;
+  }
 }
 
 .custom-form__radio:checked + .custom-form__type-label::after {
@@ -109,14 +117,25 @@
   border-radius: 50%;
 }
 
-.custom-form__color-label::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #444444;
+.custom-form__color-label {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #444444;
+  }
+
+  &:hover::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: #c7c7c7;
+  }
 }
 
 .custom-form__checkbox:checked + .custom-form__color-label::after {
