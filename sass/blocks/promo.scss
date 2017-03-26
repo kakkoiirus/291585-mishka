@@ -63,8 +63,15 @@
 @media #{$tablet-widths} {
 
   .promo {
-    padding-top: 46px;
-    padding-bottom: 20px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    margin-top: -15px;
+    z-index: 100;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center top;
+    background-size: auto 24px;
+    background-repeat: repeat-x;
   }
 
   .promo__header {
@@ -132,8 +139,9 @@
 @media #{$desktop-widths} {
 
   .promo {
-    padding-top: 123px;
+    padding-top: 140px;
     padding-bottom: 23px;
+    background-size: auto 34px;
   }
 
   .promo__wrapper {

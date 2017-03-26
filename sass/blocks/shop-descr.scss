@@ -1,12 +1,23 @@
 .shop-descr {
-  padding-top: 65px;
+  padding-top: 70px;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center -20px;
   background-repeat: no-repeat;
+  background-size: 575px auto;
+  border-top: 1px solid #ececec;
+
+  @media #{$retina} {
+    background-image: url("../img/hero-mobile@2x.jpg");
+
+    &--grey {
+      background-image: none;
+    }
+  }
 
   &--grey {
-    padding-top: 65px;
-    padding-bottom: 78px;
+    padding-top: 70px;
+    padding-bottom: 76px;
     background-color: #f1f1f1;
     background-image: none;
     background-repeat: none;
@@ -28,15 +39,23 @@
   }
 }
 
-
 @media #{$tablet-widths} {
 
   .shop-descr {
-    margin-top: -67px;
-    padding-top: 160px;
+    margin-top: -60px;
+    padding-top: 155px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: 1150px auto;
+    border-top: 1px solid #dfdfdf;
 
     &--grey {
-      padding-top: 102px;
+      padding-top: 95px;
+      padding-bottom: 90px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center bottom;
+      background-size: auto 24px;
+      background-repeat: repeat-x;
     }
   }
 
@@ -49,14 +68,30 @@
   }
 }
 
+@media #{$tablet-widths} and #{$retina-dpi},
+       #{$tablet-widths} and #{$retina-dppx} {
+
+  .shop-descr {
+    background-image: url("../img/hero-desktop@2x.jpg");
+
+    &--grey {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center bottom;
+      background-size: auto 24px;
+      background-repeat: repeat-x;
+    }
+  }
+}
+
 @media #{$desktop-widths} {
 
   .shop-descr {
-    padding-top: 160px;
+    padding-top: 152px;
 
     &--grey {
-      padding-top: 100px;
-      padding-bottom: 103px;
+      padding-top: 95px;
+      padding-bottom: 120px;
+      background-size: auto 34px;
     }
   }
 

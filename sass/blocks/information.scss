@@ -5,11 +5,29 @@
 .information__wrapper {
   @include container;
   box-shadow: inset 0 0 0 1px #ececec;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #ececec,
+                0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px #ececec,
+                0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.information__title-icon {
+  position: absolute;
+  top: 30px;
+  left: 34px;
+  fill: #63d1bb;
 }
 
 .information__title {
   @include font-bold(17px, 24px);
   box-sizing: border-box;
+  position: relative;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 24px;
@@ -18,8 +36,31 @@
   color: #000000;
 }
 
+.information__picture {
+  position: relative;
+}
+
+.information__picture:hover .information__video-icon {
+  transform: scale(1.2);
+}
+
+.information__picture:active .information__video-icon {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
 .information__picture img {
   display: block;
+}
+
+.information__video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -38px;
+  margin-left: -51px;
+  transition: transform 0.2s,
+              opacity 0.3s;
 }
 
 .information__container {
@@ -46,6 +87,11 @@
   .information__wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .information__title-icon {
+    top: 32px;
+    left: 40px;
   }
 
   .information__picture {
@@ -102,22 +148,35 @@
     height: 455px;
   }
 
+  .information__video-icon {
+    margin-left: -41px;
+  }
+
   .information__title {
     width: 350px;
     padding: 0;
     padding-top: 95px;
     padding-right: 58px;
-    padding-left: 72px;
+    padding-left: 74px;
     border-top: none;
   }
 
+  .information__title-icon {
+    top: 40px;
+    left: 74px;
+  }
+
   .information__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
     width: 355px;
-    max-height: 270px;
+    max-height: 280px;
     padding: 0;
     padding-bottom: 62px;
     padding-right: 53px;
-    padding-left: 72px;
+    padding-left: 74px;
   }
 
   .information__text {

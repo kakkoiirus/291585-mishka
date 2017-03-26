@@ -1,29 +1,11 @@
 .social-link {
-  display: block;
-  width: 33px;
-  height: 33px;
+  fill: #231F20;
 
-}
-
-.social-link {
-  &--in {
-    background-color: #f1f1f1;
-    background-image: url("../../img/icon-insta.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  &:hover {
+    fill: #46c1ae;
   }
 
-  &--fb {
-    background-color: #f1f1f1;
-    background-image: url("../../img/icon-fb.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--tw {
-    background-color: #f1f1f1;
-    background-image: url("../../img/icon-twitter.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  &:active{
+    opacity: 0.3;
   }
 }

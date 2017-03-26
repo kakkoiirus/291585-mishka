@@ -7,12 +7,13 @@
 
 .shop-section__link {
   @include font-bold(19px, 24px);
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding-top: 28px;
   padding-right: 150px;
   padding-bottom: 28px;
-  padding-left: 25px;
+  padding-left: 27px;
   color: #ffffff;
   text-decoration: none;
 
@@ -20,8 +21,44 @@
     background-color: #63d1bb;
   }
 
+  &--interior:hover {
+    background-color: #59d5bc;
+  }
+
   &--toys {
     background-color: #56c3b2;
+  }
+
+  &--toys:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.shop-section__link:hover .shop-section__icon {
+  opacity: 0.7;
+}
+
+.shop-section__link:active .shop-section__icon {
+  opacity: 0.3;
+}
+
+.shop-section__icon {
+  position: absolute;
+  fill: #149080;
+  opacity: 0.5;
+
+  &--interior {
+    top: 23px;
+    right: 36px;
+  }
+
+  &--toys {
+    top: 20px;
+    right: 23px;
   }
 }
 
@@ -30,7 +67,32 @@
   .shop-section__link {
     @include font(20px, 30px);
     width: 334px;
-    padding: 30px 170px 30px 35px;
+    min-height: 120px;
+    padding: 28px 170px 30px 35px;
+
+    &--interior:hover {
+      padding-bottom: 35px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+
+    &--toys:hover {
+      padding-bottom: 35px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+  }
+
+  .shop-section__icon {
+
+    &--interior {
+      top: 30px;
+    }
+
+    &--toys {
+      top: 30px;
+      right: 33px;
+    }
   }
 }
 

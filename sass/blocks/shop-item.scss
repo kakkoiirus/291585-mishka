@@ -3,7 +3,7 @@
 }
 
 .shop-item:hover .shop-item__wrapper {
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .shop-item:active .shop-item__wrapper {
@@ -18,7 +18,7 @@
 .shop-item__wrapper {
   box-sizing: border-box;
   padding-top: 27px;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   padding-left: 28px;
   padding-right: 28px;
   border: 1px solid #ededed;
@@ -61,13 +61,19 @@
 }
 
 .shop-item__add-link {
-  display: block;
-  width: 21px;
-  height: 21px;
   font-size: 0;
-  background-image: url("../../img/icon-cart.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  line-height: 0;
+  opacity: 0.2;
+  fill: #231F20;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -89,8 +95,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 334px;
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 22px;
     padding-left: 29px;
     padding-right: 29px;
     border-left: none;
@@ -118,7 +124,7 @@
 
   .shop-item {
     flex-direction: column;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .shop-item__img {
@@ -134,5 +140,9 @@
     padding-right: 30px;
     padding-left: 26px;
     border: 1px solid #ededed;
+  }
+
+  .shop-item__price {
+    padding-top: 17px;
   }
 }
