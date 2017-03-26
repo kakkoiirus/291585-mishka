@@ -7,7 +7,7 @@ ymaps.ready(function () {
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
             iconLayout: "default#image",
-            iconImageHref: "../img/icon-map-pin.svg",
+            iconImageHref: "img/icon-map-pin.svg",
             iconImageSize: [67, 100],
             iconImageOffset: [-30, -100]
         });
