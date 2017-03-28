@@ -18,7 +18,8 @@
 }
 
 .to-cart__wrapper {
-  @include container;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .to-cart__title {
