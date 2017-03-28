@@ -52,6 +52,15 @@ if (addCartThree) {
   });
 }
 
+if (overlay) {
+  overlay.addEventListener("click", function(event) {
+    if (toCart.classList.contains("to-cart--opened")) {
+      toCart.classList.remove("to-cart--opened");
+      overlay.classList.remove("overlay--opened");
+    }
+  });
+}
+
 window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
           if (toCart.classList.contains("to-cart--opened")) {
