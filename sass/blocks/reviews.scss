@@ -77,6 +77,11 @@
   .reviews__author-name {
     @include font(17px, 24px);
     margin-bottom: 4px;
+    padding-right: 180px;
+  }
+
+  .reviews__author-nick {
+    padding-right: 180px;
   }
 
   .reviews__toggles {
@@ -119,6 +124,7 @@
 
   .reviews__title {
     @include font(53px, 57px);
+    padding-right: 180px;
   }
 
   .reviews__text {
