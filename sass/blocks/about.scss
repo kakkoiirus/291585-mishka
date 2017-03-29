@@ -25,6 +25,26 @@
 .about__item {
   position: relative;
   padding-top: 83px;
+
+  &--one {
+    padding-right: 65px;
+  }
+
+  &--two {
+    padding-right: 37px;
+  }
+
+  &--three {
+    padding-right: 55px;
+  }
+
+  &--four {
+    padding-right: 5px;
+  }
+
+  &--six {
+    padding-right: 10px;
+  }
 }
 
 .about__icon {
@@ -91,14 +111,17 @@
     &--one {
       order: 1;
       padding-top: 100px;
+      padding-right: 101px;
     }
 
     &--two {
       order: 3;
+      padding-right: 70px;
     }
 
     &--three {
       order: 5;
+      padding-right: 93px;
     }
 
     &--four {
@@ -112,6 +135,7 @@
 
     &--six {
       order: 6;
+      padding-right: 38px;
     }
   }
 
@@ -157,5 +181,28 @@
 
   .about__title {
     @include font(53px, 57px);
+  }
+
+  .about__item {
+
+    &--one {
+      padding-right: 120px;
+    }
+
+    &--two {
+      padding-right: 85px;
+    }
+
+    &--three {
+      padding-right: 110px;
+    }
+
+    &--four {
+      padding-right: 49px;
+    }
+
+    &--six {
+      padding-right: 70px;
+    }
   }
 }
