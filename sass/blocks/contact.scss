@@ -1,6 +1,20 @@
 .contact {
-  padding-top: 36px;
+  position: relative;
+  padding-top: 43px;
   margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .contact__wrapper {
@@ -77,8 +91,12 @@
 @media #{$tablet-widths} {
 
   .contact {
-    padding-top: 63px;
+    padding-top: 80px;
     margin-bottom: 57px;
+
+    &::before {
+      height: 17px;
+    }
   }
 
   .contact__wrapper {
@@ -135,8 +153,12 @@
 
   .contact {
     position: relative;
-    padding-top: 145px;
+    padding-top: 168px;
     margin-bottom: 105px;
+
+    &::before {
+      height: 23px;
+    }
   }
 
   .contact__wrapper {
@@ -180,7 +202,7 @@
 
   .contact__map {
     position: absolute;
-    top: 75px;
+    top: 98px;
     left: 50%;
     width: 525px;
     height: 457px;

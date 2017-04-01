@@ -1,6 +1,20 @@
 .about {
-  padding-top: 27px;
+  position: relative;
+  padding-top: 34px;
   padding-bottom: 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .about__wrapper {
@@ -85,8 +99,12 @@
 @media #{$tablet-widths} {
 
   .about {
-    padding-top: 47px;
+    padding-top: 64px;
     padding-bottom: 0;
+
+    &::before {
+      height: 17px;
+    }
   }
 
   .about__title {
@@ -171,8 +189,12 @@
 @media #{$desktop-widths} {
 
   .about {
-    padding-top: 62px;
+    padding-top: 85px;
     padding-bottom: 7px;
+
+    &::before {
+      height: 23px;
+    }
   }
 
   .about__wrapper {
